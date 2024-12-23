@@ -1,0 +1,39 @@
+name: Node.js Package
+
+on:
+  push:
+    branch:
+      - "v3"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - uses:  pnpm/action-setup@v4
+        with:
+          run_install: false
+      - run: pnpm install
+      - run: pnpm run build
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+          scope: '@republik-gg'
+      - uses:  pnpm/action-setup@v4
+        with:
+          run_install: false
+      - run: pnpm install
+      - run: pnpm run build
+      - run: npm publish --access=public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

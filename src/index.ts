@@ -3,6 +3,10 @@ export { default as AmityUiKitFeed } from '~/social/components/Feed';
 export { default as AmityUiKitSocial } from '~/social/pages/Application';
 export { default as AmityUiKitChat } from '~/chat/pages/Application';
 
+export { default as AmityUiKitExplore } from '~/social/pages/Explore';
+export { default as AmityUiKitNewsFeed } from '~/social/pages/NewsFeed';
+export { default as AmityUiKitUserFeed } from '~/social/pages/UserFeed';
+
 // Export helper
 export {
   addChatMembers as amityAddChatMembers,
