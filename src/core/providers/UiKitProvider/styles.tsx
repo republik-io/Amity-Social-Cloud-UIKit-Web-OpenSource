@@ -5,7 +5,7 @@ import skeletonCss from 'react-loading-skeleton/dist/skeleton.css?inline';
 export const UIStyles = styled.div`
   color-scheme: only light;
   ${({ theme }) => theme.typography.body};
-  color: ${({ theme }) => theme.palette.base.main};
+  color: white;
   width: 100%;
   height: 100%;
   overflow: hidden;

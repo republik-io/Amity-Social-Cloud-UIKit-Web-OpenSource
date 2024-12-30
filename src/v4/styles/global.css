@@ -18,16 +18,22 @@
   It is used to define global CSS variables that can be used throughout the stylesheet.
 */
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
 
   /*
     Set the default font-family to 'Inter', with fallback to sans-serif.
     This ensures that the Inter font is used if available, otherwise, the browser's default sans-serif font will be used.
   */
-  font-family: Inter, sans-serif;
+
+  /* font-family: Inter, sans-serif; */
 
   /* color palette */
-  --asc-color-black: #000;
+
+  /* --asc-color-black: #000;
   --asc-color-white: #fff;
   --asc-color-primary-default: #1054de;
   --asc-color-primary-shade1: #4a82f2;
@@ -53,11 +59,12 @@
   --asc-color-background-default: #fff;
   --asc-color-background-shade1: #f6f7f8;
   --asc-color-background-transparent-black: #00000080;
-  --asc-color-background-transparent-white: #fffc;
+  --asc-color-background-transparent-white: #fffc; */
 
   /* Font */
-  --asc-text-global-font-family: inter, -apple-system, blinkmacsystemfont, arial, sans-serif;
-  --asc-text-global-font-style: normal;
+
+  /* --asc-text-global-font-family: inter, -apple-system, blinkmacsystemfont, arial, sans-serif;
+  --asc-text-global-font-style: normal; */
 
   /* Font Sizes */
   --asc-text-font-size-xs: 0.75rem; /* 12px */
@@ -73,11 +80,12 @@
   --asc-text-font-size-7xl: 4.5rem; /* 72px */
 
   /* Font Weights */
-  --asc-text-font-weight-light: 300;
+
+  /* --asc-text-font-weight-light: 300;
   --asc-text-font-weight-normal: 400;
   --asc-text-font-weight-medium: 500;
   --asc-text-font-weight-bold: 600;
-  --asc-text-font-weight-black: 900;
+  --asc-text-font-weight-black: 900; */
 
   /* Line Heights */
   --asc-line-height-xs: 1rem; /* 16px */
@@ -115,11 +123,12 @@
   --asc-spacing-xl3: 6rem; /* 96px */
 
   /* Box Shadow */
-  --asc-box-shadow-01: 0px 0.5px 2px 0px rgb(96 97 112 / 16%), 0px 0px 1px 0px rgb(40 41 61 / 8%);
+
+  /* --asc-box-shadow-01: 0px 0.5px 2px 0px rgb(96 97 112 / 16%), 0px 0px 1px 0px rgb(40 41 61 / 8%);
   --asc-box-shadow-02: 0px 0.5px 2px 0px rgb(96 97 112 / 16%), 0px 0px 1px 0px rgb(40 41 61 / 8%);
   --asc-box-shadow-03: 0px 2px 4px 0px rgb(96 97 112 / 16%), 0px 0px 1px 0px rgb(40 41 61 / 4%);
   --asc-box-shadow-04: 0px 4px 8px 0px rgb(96 97 112 / 20%), 0px 0px 2px 0px rgb(40 41 61 / 10%);
-  --asc-box-shadow-05: 0px 8px 16px 0px rgb(96 97 112 / 16%), 0px 2px 4px 0px rgb(40 41 61 / 4%);
+  --asc-box-shadow-05: 0px 8px 16px 0px rgb(96 97 112 / 16%), 0px 2px 4px 0px rgb(40 41 61 / 4%); */
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,6 +1,6 @@
 {
   "name": "@republik-gg/ui-kit-open-source",
-  "version": "3.11.6",
+  "version": "3.11.8",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
